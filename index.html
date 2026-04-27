@@ -1,51 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CPECC - China Pakistan Economic Corridor Council</title>
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    * {
+      transition: all 0.3s ease;
+    }
+
+    .hover-effect:hover {
+      transform: translateY(-6px) scale(1.04);
+      filter: brightness(1.08);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease;
+    }
+
+    .fade-in.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    a:active {
+      transform: scale(0.97);
+    }
+  </style>
 </head>
 
-<body class="bg-white text-gray-900 scroll-smooth text-center">
+<body class="bg-white text-gray-900 text-center">
 
 <!-- HERO -->
 <section class="relative min-h-screen flex flex-col justify-center items-center px-6 bg-gradient-to-r from-green-900 via-green-700 to-green-900 text-white">
 
-  <!-- LOGO -->
   <div class="absolute inset-0 flex items-center justify-center opacity-25">
     <img src="logo.png" class="w-[500px] md:w-[750px]" />
   </div>
 
-  <div class="relative z-10 max-w-5xl mx-auto text-center">
+  <div class="relative z-10 max-w-5xl mx-auto">
     <h1 class="text-4xl md:text-6xl font-bold mb-4">
       China Pakistan Economic Corridor Council (CPECC)
     </h1>
 
     <p class="text-lg md:text-xl text-gray-100 mb-6 leading-relaxed">
-      A registered non-profit, non-political and non-commercial organization established to promote socio-economic cooperation, education, and public welfare initiatives, with a particular focus on strengthening Pakistan–China relations.
+      A registered non-profit, non-political and non-commercial organization established to promote socio-economic cooperation, education, and public welfare initiatives, with a focus on strengthening Pakistan–China relations.
     </p>
 
     <div class="flex justify-center gap-4 flex-wrap">
-      <a href="#about" class="bg-yellow-400 text-black px-6 py-3 rounded-md font-semibold">Learn More</a>
-      <a href="#contact" class="border border-white px-6 py-3 rounded-md font-semibold">Contact Us</a>
+      <a href="#about" class="hover-effect bg-yellow-400 text-black px-6 py-3 rounded-md font-semibold">Learn More</a>
+      <a href="#contact" class="hover-effect border border-white px-6 py-3 rounded-md font-semibold">Contact Us</a>
     </div>
   </div>
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="py-20 px-6 max-w-5xl mx-auto">
+<section id="about" class="fade-in py-20 px-6 max-w-5xl mx-auto">
   <h2 class="text-3xl font-bold text-green-800 mb-4">About the Council</h2>
 
   <p class="text-lg text-gray-700 leading-relaxed">
-    The China Pakistan Economic Corridor Council (CPECC) is a registered society under the Societies Registration Act, 1860, headquartered in Islamabad, Pakistan. It operates as a non-profit, non-political, and non-commercial organization dedicated to promoting structured cooperation between Pakistan and China.
+    The China Pakistan Economic Corridor Council (CPECC) is a registered society under the Societies Registration Act, 1860, headquartered in Islamabad, Pakistan. It operates as a non-profit, non-political, and non-commercial organization dedicated to strengthening Pakistan–China cooperation.
     <br/><br/>
-    The Council focuses on socio-economic development through education, research, healthcare, and public welfare initiatives while facilitating institutional collaboration and knowledge exchange.
+    The Council promotes structured collaboration across education, research, healthcare, and social development sectors to foster sustainable growth and long-term partnerships.
   </p>
 </section>
 
 <!-- MID LOGO -->
-<section class="py-16 bg-gray-50">
+<section class="fade-in py-16 bg-gray-50">
   <h2 class="text-2xl font-bold text-green-800 mb-6">Our Identity</h2>
 
   <div class="flex justify-center mb-6">
@@ -53,191 +79,145 @@
   </div>
 
   <p class="max-w-3xl mx-auto text-gray-700">
-    The CPECC identity represents unity, strategic partnership, and shared development goals between Pakistan and China, reflecting a commitment to long-term collaboration and sustainable growth.
+    The CPECC identity represents unity, cooperation, and shared development goals between Pakistan and China.
   </p>
 </section>
 
 <!-- CORE AREAS -->
-<section class="py-20 px-6">
+<section class="fade-in py-20 px-6">
   <h2 class="text-3xl font-bold text-green-800 mb-10">Core Areas of Engagement</h2>
 
   <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-    <div class="p-6 bg-white shadow">Bilateral Cooperation & Partnerships</div>
-    <div class="p-6 bg-white shadow">Education & Research Development</div>
-    <div class="p-6 bg-white shadow">Healthcare & Social Welfare</div>
-    <div class="p-6 bg-white shadow">Community Infrastructure</div>
-    <div class="p-6 bg-white shadow">Knowledge Dissemination</div>
-    <div class="p-6 bg-white shadow">Humanitarian Initiatives</div>
+    <div class="hover-effect p-6 bg-white shadow">Bilateral Cooperation</div>
+    <div class="hover-effect p-6 bg-white shadow">Education & Research</div>
+    <div class="hover-effect p-6 bg-white shadow">Healthcare & Welfare</div>
+    <div class="hover-effect p-6 bg-white shadow">Community Infrastructure</div>
+    <div class="hover-effect p-6 bg-white shadow">Knowledge Dissemination</div>
+    <div class="hover-effect p-6 bg-white shadow">Humanitarian Initiatives</div>
   </div>
 </section>
 
-<!-- VISION MISSION -->
-<section class="py-20 px-6 bg-green-50">
+<!-- VISION -->
+<section class="fade-in py-20 px-6 bg-green-50">
   <h2 class="text-3xl font-bold text-green-800 mb-10">Vision & Mission</h2>
 
   <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-    <div class="p-6 bg-white shadow">
+    <div class="hover-effect p-6 bg-white shadow">
       <h3 class="font-bold mb-2">Vision</h3>
-      <p>To become a leading platform fostering sustainable development, knowledge exchange, and strategic collaboration between Pakistan and China.</p>
+      <p>To foster sustainable development and strategic collaboration between Pakistan and China.</p>
     </div>
 
-    <div class="p-6 bg-white shadow">
+    <div class="hover-effect p-6 bg-white shadow">
       <h3 class="font-bold mb-2">Mission</h3>
-      <p>To advance education, research, social welfare, and community development through partnerships and inclusive programs.</p>
+      <p>To advance education, research, and social welfare through partnerships and inclusive programs.</p>
     </div>
   </div>
 </section>
 
 <!-- OBJECTIVES -->
-<!-- OBJECTIVES -->
-<section class="py-20 px-6">
-  <h2 class="text-3xl font-bold text-green-800 mb-10">
-    Strategic Objectives
-  </h2>
+<section class="fade-in py-20 px-6">
+  <h2 class="text-3xl font-bold text-green-800 mb-10">Strategic Objectives</h2>
 
   <div class="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
 
-    <!-- CARD 1 -->
-    <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-yellow-400 hover:shadow-lg transition">
-      <h3 class="text-lg font-bold text-green-800 mb-2">
-        Bilateral Cooperation
-      </h3>
-      <p class="text-gray-700">
-        Promote cultural, academic, and economic collaboration between Pakistan and China while facilitating partnerships among institutions, professionals, and communities.
-      </p>
+    <div class="hover-effect bg-white p-6 rounded-lg shadow-md border-t-4 border-yellow-400">
+      <h3 class="font-bold mb-2">Bilateral Cooperation</h3>
+      <p>Promote collaboration and partnerships across institutions and communities.</p>
     </div>
 
-    <!-- CARD 2 -->
-    <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-yellow-400 hover:shadow-lg transition">
-      <h3 class="text-lg font-bold text-green-800 mb-2">
-        Education & Knowledge Development
-      </h3>
-      <p class="text-gray-700">
-        Establish and support schools, universities, and research centers, while organizing seminars, conferences, and publishing educational materials.
-      </p>
+    <div class="hover-effect bg-white p-6 rounded-lg shadow-md border-t-4 border-yellow-400">
+      <h3 class="font-bold mb-2">Education & Development</h3>
+      <p>Support academic institutions, research, and knowledge exchange programs.</p>
     </div>
 
-    <!-- CARD 3 -->
-    <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-yellow-400 hover:shadow-lg transition">
-      <h3 class="text-lg font-bold text-green-800 mb-2">
-        Healthcare & Social Welfare
-      </h3>
-      <p class="text-gray-700">
-        Develop hospitals, clinics, and community health centers, while supporting vulnerable groups and providing scholarships and financial assistance.
-      </p>
+    <div class="hover-effect bg-white p-6 rounded-lg shadow-md border-t-4 border-yellow-400">
+      <h3 class="font-bold mb-2">Healthcare & Welfare</h3>
+      <p>Enhance healthcare access and support vulnerable communities.</p>
     </div>
 
-    <!-- CARD 4 -->
-    <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-yellow-400 hover:shadow-lg transition">
-      <h3 class="text-lg font-bold text-green-800 mb-2">
-        Community Infrastructure
-      </h3>
-      <p class="text-gray-700">
-        Establish libraries, laboratories, and public learning spaces while promoting literacy and awareness programs at the community level.
-      </p>
+    <div class="hover-effect bg-white p-6 rounded-lg shadow-md border-t-4 border-yellow-400">
+      <h3 class="font-bold mb-2">Community Infrastructure</h3>
+      <p>Develop learning spaces and promote literacy initiatives.</p>
     </div>
 
-    <!-- CARD 5 -->
-    <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-yellow-400 hover:shadow-lg transition md:col-span-2">
-      <h3 class="text-lg font-bold text-green-800 mb-2">
-        Humanitarian & Philanthropic Work
-      </h3>
-      <p class="text-gray-700">
-        Implement poverty alleviation initiatives, rehabilitation programs, shelters, and social protection frameworks for underserved communities.
-      </p>
+    <div class="hover-effect bg-white p-6 rounded-lg shadow-md border-t-4 border-yellow-400 md:col-span-2">
+      <h3 class="font-bold mb-2">Humanitarian Work</h3>
+      <p>Poverty alleviation, rehabilitation, and social protection programs.</p>
     </div>
 
   </div>
 </section>
 
-<!-- PROGRAMS -->
-<section class="py-20 px-6 bg-green-50">
-  <h2 class="text-3xl font-bold text-green-800 mb-6">Programs and Initiatives</h2>
-
-  <p class="max-w-4xl mx-auto text-gray-700 leading-relaxed">
-    The Council undertakes academic and research collaborations, organizes workshops, seminars, and conferences, and implements healthcare and welfare projects. It also focuses on publication of knowledge resources and capacity-building initiatives to support long-term development.
-  </p>
-</section>
-
 <!-- GOVERNANCE -->
-<!-- GOVERNANCE -->
-<section class="py-20 px-6 bg-green-50">
-  <h2 class="text-3xl font-bold text-green-800 mb-10">
-    Governance Structure & Financial Model
-  </h2>
+<section class="fade-in py-20 px-6 bg-green-50">
+  <h2 class="text-3xl font-bold text-green-800 mb-10">Governance Structure</h2>
 
   <div class="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
 
-    <!-- CARD 1 -->
-    <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-yellow-400 hover:shadow-lg transition">
-      <h3 class="text-lg font-bold text-green-800 mb-2">
-        Governance Framework
-      </h3>
-      <p class="text-gray-700">
-        CPECC is managed by a governing body and executive committee comprising experienced professionals and stakeholders aligned with the Council’s mission and objectives.
-      </p>
+    <div class="hover-effect bg-white p-6 shadow border-t-4 border-yellow-400">
+      <h3 class="font-bold mb-2">Governance Framework</h3>
+      <p>Managed by an executive committee ensuring strategic direction.</p>
     </div>
 
-    <!-- CARD 2 -->
-    <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-yellow-400 hover:shadow-lg transition">
-      <h3 class="text-lg font-bold text-green-800 mb-2">
-        Transparency & Accountability
-      </h3>
-      <p class="text-gray-700">
-        The organization operates under a transparent decision-making process with a strong emphasis on accountability, ethical practices, and institutional integrity.
-      </p>
+    <div class="hover-effect bg-white p-6 shadow border-t-4 border-yellow-400">
+      <h3 class="font-bold mb-2">Transparency</h3>
+      <p>Accountable and ethical operational practices.</p>
     </div>
 
-    <!-- CARD 3 -->
-    <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-yellow-400 hover:shadow-lg transition">
-      <h3 class="text-lg font-bold text-green-800 mb-2">
-        Sources of Funding
-      </h3>
-      <p class="text-gray-700">
-        Funding is secured through donations, grants, membership contributions, and partnerships with local and international organizations.
-      </p>
+    <div class="hover-effect bg-white p-6 shadow border-t-4 border-yellow-400">
+      <h3 class="font-bold mb-2">Funding Sources</h3>
+      <p>Donations, grants, memberships, and partnerships.</p>
     </div>
 
-    <!-- CARD 4 -->
-    <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-yellow-400 hover:shadow-lg transition">
-      <h3 class="text-lg font-bold text-green-800 mb-2">
-        Utilization of Funds
-      </h3>
-      <p class="text-gray-700">
-        All financial resources are fully allocated toward achieving organizational objectives, with no profit distribution and adherence to governing regulations.
-      </p>
+    <div class="hover-effect bg-white p-6 shadow border-t-4 border-yellow-400">
+      <h3 class="font-bold mb-2">Fund Utilization</h3>
+      <p>All funds used strictly for organizational objectives.</p>
     </div>
 
   </div>
 </section>
 
 <!-- PARTNERS -->
-<section class="py-16 px-6 bg-gray-50">
-  <h2 class="text-3xl font-bold text-green-800 mb-8">Stakeholders and Partners</h2>
+<section class="fade-in py-16 px-6">
+  <h2 class="text-3xl font-bold text-green-800 mb-8">Stakeholders & Partners</h2>
 
   <div class="grid md:grid-cols-4 gap-6 max-w-5xl mx-auto">
-    <div class="bg-white p-4 shadow">Government Departments</div>
-    <div class="bg-white p-4 shadow">Educational Institutions</div>
-    <div class="bg-white p-4 shadow">International Organizations</div>
-    <div class="bg-white p-4 shadow">Development Agencies</div>
+    <div class="hover-effect bg-gray-100 p-4">Government Departments</div>
+    <div class="hover-effect bg-gray-100 p-4">Educational Institutions</div>
+    <div class="hover-effect bg-gray-100 p-4">International Organizations</div>
+    <div class="hover-effect bg-gray-100 p-4">Development Agencies</div>
   </div>
 </section>
 
 <!-- CTA -->
-<section id="contact" class="py-20 px-6 bg-green-900 text-white">
+<section id="contact" class="fade-in py-20 px-6 bg-green-900 text-white">
   <h2 class="text-3xl font-bold mb-4">Engage With the Council</h2>
 
   <p class="mb-6 max-w-2xl mx-auto">
     We invite institutions, professionals, and partners to collaborate in advancing sustainable development and strengthening Pakistan–China cooperation.
   </p>
 
-  <a href="#" class="bg-yellow-400 text-black px-6 py-3 rounded-md font-semibold">Get in Touch</a>
+  <a href="#" class="hover-effect bg-yellow-400 text-black px-6 py-3 rounded-md font-semibold">
+    Get in Touch
+  </a>
 </section>
 
 <!-- FOOTER -->
 <footer class="py-6 text-sm bg-black text-gray-300">
-  © 2026 China Pakistan Economic Corridor Council (CPECC). All rights reserved.
+  © 2026 CPECC. All rights reserved.
 </footer>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  });
+
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
 
 </body>
 </html>
